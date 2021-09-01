@@ -23,5 +23,14 @@
   // Путь к изображениям из SASS-файла всегда такой, как из папки css
   background-image: url('../images/demo.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
+}
+
+.container {
+  padding-top: 50px;
+
+  @include mq(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
