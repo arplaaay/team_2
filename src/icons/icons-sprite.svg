@@ -92,5 +92,14 @@
 <path d="M24.451 8.727c-0.351-0.054-0.591-0.379-0.537-0.727 0.040-0.259 0.272-1.586 0.902-2.253 0.243-0.257 0.649-0.271 0.908-0.029 0.259 0.241 0.272 0.644 0.029 0.902-0.267 0.283-0.494 1.091-0.57 1.575-0.054 0.344-0.378 0.586-0.733 0.533z"></path>
 <path d="M1.023 11.905c-0.123-0.474-0.429-1.257-0.722-1.512-0.267-0.232-0.294-0.635-0.060-0.9s0.639-0.292 0.907-0.059c0.693 0.603 1.054 1.901 1.12 2.154 0.088 0.341-0.119 0.688-0.462 0.776-0.351 0.088-0.695-0.123-0.783-0.459z"></path>
 </symbol>
+<symbol id="icon-modal-close" viewBox="0 0 34 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M2.004 30.495l28.991-28.991"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30.996 30.495l-28.991-28.991"></path>
+</symbol>
+<symbol id="icon-modal-burger" viewBox="0 0 48 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 2.286h46.857"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 16h46.857"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 29.714h46.857"></path>
+</symbol>
 </defs>
 </svg>
