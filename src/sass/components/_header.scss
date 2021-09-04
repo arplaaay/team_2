@@ -1,0 +1,158 @@
+.page-header { 
+
+padding-top: 30px;
+@include mq($tablet-only) { padding-top: 40px; }
+
+}
+
+.page-header-flex { 
+
+  @include mq($tablet) {  
+    display: flex;
+    align-items: center; }
+
+}
+
+.logo { 
+ display: inline-block; 
+ text-decoration: none;  
+
+ color: var(--title-color);
+}
+
+.logo__partone { 
+
+display: block;
+margin: 0;  
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 26px;
+line-height: 1.23;
+letter-spacing: 0.04em;
+
+@include mq($mobile-only) { 
+font-size: 20px;
+line-height: 1.30;}
+}
+
+.logo__svg { 
+    width: 22px;
+    height: 30px;
+    margin-left: 3px;
+    margin-right: 4px;
+    fill: var(--extra-color-orange);
+
+  @include mq($tablet) { 
+    width: 15px;
+    height: 20px; 
+  }
+
+}
+.logo__parttwo { 
+
+margin: 3px 0 0 0;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 8px;
+line-height: 1.25;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+
+@include mq($mobile-only) { 
+font-size: 5px;
+line-height: 6px;}
+
+
+
+}
+
+.logo__parttwo--acent { 
+    color: var(--extra-color-orange);
+}
+
+.page-header__navigation { 
+    margin-left: 144px;
+
+
+}
+
+.site-navigation { 
+    display: flex;
+
+@include mq($notDesktop) { display: none;}
+}
+
+.site-navigation__item { 
+
+list-style: none;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.21;
+
+text-align: center;
+
+& + & { 
+margin-left: 40px;}
+
+}
+
+.site-navigation__link { 
+
+color: var(--text-color);
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.21;
+
+text-decoration: none;
+text-transform: uppercase;
+
+
+.site-navigation__item &:hover,
+.site-navigation__item &:focus {
+  color: var(--extra-color-orange);}
+
+&--current {
+  color: var(--extra-color-orange);}
+}
+
+.page-header__button { 
+
+  margin-left: 60px;  
+  padding: 25px 22px 24px 21px;
+
+  min-width: 336px;
+  height: 70px;
+
+  color: var(--extra-color-orange);
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.21;
+text-transform: uppercase;
+
+ border: 2px solid var(--extra-color-orange);
+ background-color: transparent;
+
+ @include mq($mobile-only) { display: none;}
+ @include mq($tablet) { 
+ margin-left: 244px;  
+  padding: 3px 13px 3px 14px;
+
+  min-width: 260px;
+  height: 48px;
+
+ }
+}
