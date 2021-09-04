@@ -10,19 +10,31 @@
     <button type="button" class="button hero__button">i want a free lesson</button>
     </div>
     <div class="hero__images">
-      <img
-        class="image-above"
-        srcset=""
-        src=""
-        alt="Live communication of the group in the classroom in the lesson"
-      />
-      <img
-        class="image-under"
-        srcset=""
-        src=""
-        alt="Live communication of the group in the classroom in the lesson"
-      />
-    </div>
+      <picture class="hero__picture">
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="./images/HeroPngMobile@1x.png 1x,
+                  ./images/HeroPngMobile@2x.png 2x"
+                />
+                <source media="screen and (min-width: 768) and (max-width: 1365)" 
+                srcset="./images/HeroPngTablet@1x.png 1x,
+                ./images/HeroPngTablet@2x.png 2x" />   
+                <source media="screen and (min-width: 1366)" 
+                srcset="./images/HeroPngDesctop@1x.png 1x,
+                ./images/HeroPngDesctop@2x.png 2x" />          
+                <img
+                  src="./images/HeroPngDesctop@1x.png"
+                  alt="Live communication of the group in the classroom in the lesson"
+                />
+              </picture>
+             <picture class="hero__decoration">
+                      
+                <img
+                  src="./images/HeroDesctop@1x.png"
+                  alt="Decoration element"
+                />
+              </picture>
+          </div>
     </div>
   </div>
 </section>

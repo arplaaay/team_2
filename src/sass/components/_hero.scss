@@ -8,3 +8,15 @@
     margin-top: 54.05px;
     margin-left: 116.70px;
 }
+.hero__decoration { 
+    position: absolute;
+
+    left: -0.5px;
+    top: -3.5px;
+    z-index: -1;
+
+background: #FFFFFF;
+/* shsw */
+
+box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
