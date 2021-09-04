@@ -1,17 +1,24 @@
 .page-header { 
 
 padding-top: 30px;
-@include mq($tablet-only) { padding-top: 40px; }
+
+/*
+@include mq($tablet-only) { padding-top: 40px; } 
+*/
 
 }
 
 .page-header-flex { 
 
+  /*
   @include mq($tablet) {  
+    */
     display: flex;
     align-items: center; }
 
-}
+/*
+} 
+*/
 
 .logo { 
  display: inline-block; 
@@ -32,9 +39,11 @@ font-size: 26px;
 line-height: 1.23;
 letter-spacing: 0.04em;
 
+/*
 @include mq($mobile-only) { 
 font-size: 20px;
-line-height: 1.30;}
+line-height: 1.30;} 
+*/
 }
 
 .logo__svg { 
@@ -44,10 +53,12 @@ line-height: 1.30;}
     margin-right: 4px;
     fill: var(--extra-color-orange);
 
+  /*
   @include mq($tablet) { 
     width: 15px;
     height: 20px; 
-  }
+  } 
+  */
 
 }
 .logo__parttwo { 
@@ -61,11 +72,11 @@ font-size: 8px;
 line-height: 1.25;
 letter-spacing: 0.18em;
 text-transform: uppercase;
-
+/*
 @include mq($mobile-only) { 
 font-size: 5px;
 line-height: 6px;}
-
+*/
 
 
 }
@@ -82,8 +93,9 @@ line-height: 6px;}
 
 .site-navigation { 
     display: flex;
-
+/*
 @include mq($notDesktop) { display: none;}
+*/
 }
 
 .site-navigation__item { 
@@ -145,7 +157,7 @@ text-transform: uppercase;
 
  border: 2px solid var(--extra-color-orange);
  background-color: transparent;
-
+/*
  @include mq($mobile-only) { display: none;}
  @include mq($tablet) { 
  margin-left: 244px;  
@@ -155,4 +167,6 @@ text-transform: uppercase;
   height: 48px;
 
  }
+ */
 }
+
