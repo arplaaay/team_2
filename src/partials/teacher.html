@@ -1,45 +1,56 @@
 <section class="section teacher">
     <div class="container">
-        <h2 class="teacher__title">Teacher</h2> 
-        <div class="teacher__image">
-            <picture class="teacher__picture">
-                <source
-                  media="screen and (max-width: 1365px)"
-                  srcset="./images/teacherMobileTablet@1x.jpg,
-                  ./images/teacherMobileTablet@2x.jpg 2x"
-                />
-                <source media="screen and (min-width: 1366)" 
-                srcset="./images/teacherDesctop@1x.jpg,
-                ./images/teacherDesctop@2x.jpg 2x" />            
-                <img
-                  src="./images/teacherDesctop@1x.jpg"
-                  alt="Photo of Elena Moreva"
-                />
-              </picture>
-        </div>        
-        <h3 class="teacher__name">Елена Морева</h3>
-        <ul class="teacher__list">
-            <li class="teacher__item">
-                <svg class="teacher__chek" width="25" height="20"><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
-                <p class="teacher__progres">6 yeards of experience in preparing students for UPE</p>
-            </li>
-            <li class="teacher__item">
-                <svg class="teacher__chek" width="25" height="20" ><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
-                <p class="teacher__progres">Own result of passing VNO - 197 points 2 years in a row</p>
-            </li>
-            <li class="teacher__item">
-                <svg class="teacher__chek" width="25" height="20" ><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
-                <p class="teacher__progres">6 yeards of experience in preparing students for UPE Own result of passing VNO - 197 points 2 years in a row Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</p>
-            </li>
-            <li class="teacher__item">                
-                <p class="teacher__progres">—</p>
-            </li>
-        </ul>
-        <p class="teacher__about">
-            Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.
-            In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.
-            Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).
-        </p>
-        <a class="teacher__link" href="#">Cambrige English Entry Level Certificate</a>
-    </div>
-</section>
+        <h2 class="teacher__title">Teacher</h2>
+        <div class="teacher__position">
+            <div class="teacher__image">
+                <picture class="teacher__picture">
+                    <source 
+                    media="screen and (max-width: 1365px)"
+                    srcset="./images/teacherMobileTablet@1x.jpg 1x, ./images/teacherMobileTablet@2x.jpg 2x"/>
+                    <source  media="screen and (min-width: 1366)" 
+                    srcset="./images/teacherDesctop@1x.jpg 1x, ./images/teacherDesctop@2x.jpg 2x" />            
+                    <img
+                    src="./images/teacherDesctop@1x.jpg"
+                    alt="Photo of Elena Moreva"
+                    />
+                </picture>
+            </div>  
+            <div class="column">
+                <h3 class="teacher__name">Елена Морева</h3>
+                <ul class="teacher__list">
+                    <li class="teacher__item">
+                        <div class="teacher__icon">
+                            <svg class="teacher__chek" width="17" height="14"><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
+                        </div>
+                        <p class="teacher__progres">6 yeards of experience in preparing students for UPE</p>
+                    </li>
+                    <li class="teacher__item">
+                        <div class="teacher__icon">
+                            <svg class="teacher__chek" width="17" height="14" ><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
+                        </div>
+                        <p class="teacher__progres">Own result of passing VNO - 197 points 2 years in a row</p>
+                    </li>
+                    <li class="teacher__item">
+                        <div class="teacher__icon">
+                            <svg class="teacher__chek" width="17" height="14" ><use href="./icons/icons-sprite.svg#icon-check-mark"></use></svg>
+                        </div>
+                        <p class="teacher__progres">6 yeards of experience in preparing students for UPE Own result of passing VNO - 197 points 2 years in a row Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</p>
+                    </li>
+                    <li class="teacher__last">                
+                        <p class="teacher__progres">—</p>
+                    </li>
+                </ul>
+                <p class="teacher__about">
+                    Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.                    
+                </p>
+                <p class="teacher__about">                   
+                    In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.                    
+                </p>
+                <p class="teacher__about">                    
+                    Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).
+                </p>
+                <a class="teacher__link" href="https://www.cambridgeenglish.org/images/177867-the-methodology-behind-the-cambridge-english-scale.pdf">Cambrige English Entry Level Certificate</a>
+            </div>      
+            </div>
+        </div> 
+    </section>
