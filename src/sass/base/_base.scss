@@ -49,18 +49,25 @@ button {
 }
 
 .container {
-  width: 320px;
+  max-width: 480px;
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 
   @include mq(tablet) {
-    width: 768px;
+    max-width: 768px;
     padding: 0 40px;
   }
 
   @include mq(desktop) {
-    width: 1366px;
+    max-width: 1366px;
     padding: 0 26px;
   }
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
 }
