@@ -1,23 +1,17 @@
 <footer class="footer">
     <div class="container">
-        <a href="./index.html" class="logo">
-            <p>
-                <span class="logo__partone">Hell
-                <svg class="logo__svg" width="22" height="30">
-                    <use href="./icons/icons-sprite.svg#icon-Campfire"></use>
-                </svg>
-                EN</span>
-            </p>
-            <p>
-            <span class="logo__parttwo">hellish </span><span class="logo__parttwo--acent">english</span>
-            </p>
-        </a>
+      <!-- однотипные элементы можно вынести в отдельный файл
+        и подключать в нужных места, например здесь,
+        а потом еще и в modal и footer -->
+
+        <include src="./partials/logo.html"></include>
+
         <address class="footer__address">
             <ul class="list">
                 <li class="footer__address-item">
                     <a href="tel:+380000000000">
                         <svg class="footer__address-icon" width="30" height="28.82">
-                            <use href="./icons/icons-sprite.svg#icon-phone"></use>
+                            <use href="./images/icons/icons-sprite.svg#icon-phone"></use>
                         </svg>
                         +38 (000) 000 00 00
                     </a>
@@ -25,7 +19,7 @@
                 <li class="footer__address-item">
                     <a href="" class="footer__address-icon" aria-label="Ссылка на Instagram">
                         <svg class="icon" width="40" height="40">
-                            <use href="./icons/icons-sprite.svg#icon-instagram"></use>
+                            <use href="./images/icons/icons-sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
