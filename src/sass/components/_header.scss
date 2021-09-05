@@ -1,9 +1,10 @@
 .page-header {
-  padding-top: 30px;
+  padding-top: 33.5px;
 
+  @include mq(mobile-only) {
+    padding-top: 30.5px;}
   @include mq(tablet-only) {
-    padding-top: 40px;
-  }
+    padding-top: 40px;}
 }
 
 .page-header-flex {
