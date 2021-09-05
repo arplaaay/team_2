@@ -45,10 +45,14 @@
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url(../icons/instagram.svg);
-    // background-image: url(../icons/icons-sprite.svg#icon-instagram);
-    background-size: 40px;
+    background-size: contain;
     background-repeat: no-repeat;
+
+    background-image: url('../images/instagram-sm.png');
+
+    @include mq(retina) {
+      background-image: url('../images/instagram-lg.png');
+    }
 
     @media screen and (max-width: 767px) {
       margin: 30px auto 0;

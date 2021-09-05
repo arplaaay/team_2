@@ -48,6 +48,16 @@
   }
 }
 
+.teacher__picture {
+  width: 243px;
+  height: 306px;
+
+  @include mq(desktop) {
+    width: 530px;
+    height: 668px;
+  }
+}
+
 .teacher__position {
   @include mq(tablet) {
     display: flex;
