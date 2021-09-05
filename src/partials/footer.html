@@ -1,30 +1,36 @@
 <footer class="footer">
-    <div class="container">
-      <!-- однотипные элементы можно вынести в отдельный файл
+  <div class="container">
+    <!-- однотипные элементы можно вынести в отдельный файл
         и подключать в нужных места, например здесь,
         а потом еще и в modal и footer -->
 
-        <include src="./partials/logo.html"></include>
+    <include src="./partials/logo.html"></include>
 
-        <address class="footer__address">
-            <ul class="list">
-                <li class="footer__address-item">
-                    <a href="tel:+380000000000">
-                        <svg class="footer__address-icon" width="30" height="28.82">
-                            <use href="./images/icons/icons-sprite.svg#icon-phone"></use>
-                        </svg>
-                        +38 (000) 000 00 00
-                    </a>
-                </li>
-                <li class="footer__address-item">
-                    <a href="" class="footer__address-icon" aria-label="Ссылка на Instagram">
-                        <svg class="icon" width="40" height="40">
-                            <use href="./images/icons/icons-sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </address>
-        <p class="footer__copyright">@ All rights reserved, 2019</p>
+    <address class="footer__address">
+      <ul class="list">
+        <li class="footer__address-item">
+          <a href="tel:+380000000000">
+            <svg class="footer__address-icon" width="30" height="28.82">
+              <use href="./images/icons/icons-sprite.svg#icon-phone"></use>
+            </svg>
+            +38 (000) 000 00 00
+          </a>
+        </li>
+        <li class="footer__address-item">
+          <a href="" class="footer__address-icon" aria-label="Ссылка на Instagram">
+            <svg class="icon" width="40" height="40">
+              <use href="./images/icons/icons-sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </address>
+  </div>
+
+  <section class="footer__copyright">
+    <div class="container">
+      <h2 class="section__title-visually-hidden">Copyright</h2>
+      <p class="footer__copyright-text">@ All rights reserved, 2019</p>
     </div>
+  </section>
 </footer>
