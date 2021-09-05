@@ -1,0 +1,54 @@
+.hero { 
+    padding-top: 45.95px;
+    padding-bottom: 0;
+}
+.section-hero-flex { 
+    display: flex;
+}
+.hero__content { 
+    margin-top: 54.05px;
+    margin-right: 116.70px;   
+}
+
+.hero__title { 
+
+width: 493px;
+font-weight: 800;
+font-size: 58px;
+line-height: 1.3;
+
+}
+.hero__text  {
+margin-top: 8px;
+
+color: var(--text-color);
+
+font-weight: 500;
+font-size: 20px;
+line-height: 1.65;
+letter-spacing: 0.08em;
+}
+
+.hero__text--accent { 
+
+ display: inline-block; 
+
+ color: var(--title-color);
+
+ font-weight: bold;
+}
+
+
+
+.hero__decoration { 
+    position: absolute;
+
+    left: -0.5px;
+    top: -3.5px;
+    z-index: -1;
+
+background: #FFFFFF;
+/* shsw */
+
+box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
