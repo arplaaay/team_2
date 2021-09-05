@@ -1,24 +1,44 @@
-<section class="contacts">
+<section class="contacts section">
+  <div class="contacts-bg">
     <div class="container">
-  <h2 class="contacts-title">
-    Registration for a
-    <span class="contacts-title--orange">free</span> phone
-    <span class="contacts-title--orange">consultation</span> on the nuances
-    of English UPE
-  </h2>
-  <p class="contacts-description">
-    Leave a request for participation in a
-    <span class="contacts-description--orange">free lesson</span> . A
-    consultant will contact you and answer your questions
-  </p>
-  <form class="contacts-form" >
-    <label class="contacts-label">
-      <input class="contacts-input" type="text" name="name" placeholder="Name*" required />
-    </label>
-    <label class="contacts-label">
-      <input class="contacts-input" type="tel" name="phone" placeholder="Phone*" required />
-    </label>
-    <button class="contacts-submit" type="submit">i want a free lesson</button>
-  </form>
-</div>
+      <h2 class="contacts-title">
+        Registration for a
+        <span class="contacts-title--orange">free</span> phone
+        <span class="contacts-title--orange">consultation</span> on the nuances of English UPE
+      </h2>
+      <p class="contacts-description">
+        Leave a request for participation in a
+        <span class="contacts-description--orange">free lesson</span>. <br />
+        A consultant will contact you and answer your questions
+      </p>
+      <form class="contacts-form">
+        <label class="contacts-label">
+          <input
+            class="contacts-input"
+            type="text"
+            name="name"
+            placeholder="Name*"
+            required
+            title="Please enter your name"
+            autocomplete="off"
+            minlength="2"
+            pattern="^[А-Яа-яЁёa-zA-Z\s]+$"
+          />
+        </label>
+        <label class="contacts-label">
+          <input
+            class="contacts-input"
+            type="tel"
+            name="phone"
+            placeholder="Phone*"
+            autocomplete="off"
+            required
+            pattern="[0-9-+()\s]{3,}"
+            title="Please enter your phone number"
+          />
+        </label>
+        <button class="contacts-submit" type="submit">i want a free lesson</button>
+      </form>
+    </div>
+  </div>
 </section>

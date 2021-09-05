@@ -1,20 +1,18 @@
 <div class="modal container">
   <ul class="modal__header-list">
     <li class="modal__header-item">
-      <p class="modal__logotype">
-        Hell
-        <svg width="22" height="30">
-          <use href="./icons/icons-sprite.svg#icon-Campfire"></use>
-        </svg>
-        EN
-      </p>
-      <p>Hellish english</p>
+      <!-- однотипные элементы можно вынести в отдельный файл
+        и подключать в нужных места, например здесь,
+        а потом еще и в modal и footer -->
+
+      <include src="./partials/logo.html"></include>
+
     </li>
 
     <li class="modal__header-item">
       <button type="button" class="modal__btn-close">
         <svg width="15" height="15">
-          <use href="./icons/icons-sprite.svg#icon-modal-close"></use>
+          <use href="./images/icons/icons-sprite.svg#icon-modal-close"></use>
         </svg>
       </button>
     </li>

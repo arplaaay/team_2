@@ -9,6 +9,7 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
+
   @include mq(desktop) {
     font-size: 46px;
     margin-bottom: 50px;
@@ -20,6 +21,7 @@
   letter-spacing: 0.08em;
   line-height: 1.2;
   margin-bottom: 30px;
+
   @include mq(desktop) {
     font-size: 30px;
     margin-bottom: 45px;
@@ -31,6 +33,7 @@
   content: '';
   display: block;
   border-bottom: 1px solid #b9b9b9;
+
   @include mq(desktop) {
     margin-top: 15px;
   }
@@ -39,8 +42,19 @@
 .teacher__image {
   margin-bottom: 20px;
   min-width: 243px;
+
   @include mq(desktop) {
     min-width: 530px;
+  }
+}
+
+.teacher__picture {
+  width: 243px;
+  height: 306px;
+
+  @include mq(desktop) {
+    width: 530px;
+    height: 668px;
   }
 }
 
@@ -66,6 +80,7 @@
   width: 17px;
   height: 14px;
   margin-right: 9px;
+
   @include mq(desktop) {
     margin-right: 35px;
   }
@@ -80,9 +95,11 @@
   line-height: 1.2;
   font-size: 14px;
   margin-bottom: 25px;
+
   @include mq(tablet) {
     font-size: 12px;
   }
+
   @include mq(desktop) {
     font-size: 16px;
   }
@@ -95,6 +112,7 @@
   line-height: 1.6;
   font-size: 20px;
   margin-bottom: 5px;
+
   @include mq(desktop) {
     margin-bottom: 15px;
   }
@@ -106,6 +124,7 @@
   line-height: 1.7;
   font-size: 12px;
   margin-bottom: 10px;
+
   @include mq(tablet) {
     font-size: 10px;
     line-height: 2;
@@ -124,6 +143,7 @@
   font-weight: 500;
   line-height: 1.7;
   font-size: 12px;
+
   @include mq(desktop) {
     line-height: 1.6;
     font-size: 18px;
