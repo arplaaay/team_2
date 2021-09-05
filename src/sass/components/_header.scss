@@ -7,85 +7,28 @@
     padding-top: 40px;}
 }
 
-  &-flex {
-    @include mq(tablet) {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &__navigation {
-    margin-left: 144px;
-  }
-
-  &__button {
-    margin-left: 60px;
-    padding: 25px 22px 24px 21px;
-
-.logo__partone {
-  display: flex;
-  align-items: center;
-  margin: 0;
-
-
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-  letter-spacing: 0.04em;
-
-  @include mq(mobile-only) {
-    font-size: 15px;
-    line-height: 1.23;
+.page-header-flex {
+@include mq(tablet) {
+    display: flex;
+    align-items: center;
   }
 }
 
-    border: 2px solid var(--extra-color-orange);
-    background-color: transparent;
-
-  @include mq(mobile-only) {
-    width: 15px;
-    height: 20px;
-    margin-left: 4px;
-  }
+.page-header__navigation {
+  margin-left: 144px;
 }
-.logo__parttwo {
-  margin: 3px 0 0 0;
-
-  font-weight: bold;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-
-  @include mq(mobile-only) {
-    font-size: 5px;
-    line-height: 1.2;
-  }
-}
-
-      min-width: 260px;
-      height: 48px;
-    }
-  }
-}
-
 .site-navigation {
   display: flex;
-
   @include mq(notDesktop) {
     display: none;
   }
 }
-
 .site-navigation__item {
-
 display: flex;
 align-items: center;
 justify-content: center;
-
 & + & {
     margin-left: 40px; }
-
  &:nth-child(1) {
     width: 197px; }
  &:nth-child(2) {
@@ -94,56 +37,43 @@ justify-content: center;
     width: 179px;}
  &:nth-child(4) {
     width: 91px;}
-
  }
-
 .site-navigation__link {
  
   color: var(--text-color);
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
   text-transform: uppercase;
-
-    & + & {
-      margin-left: 40px;
-    }
+  .site-navigation__item &:hover,
+  .site-navigation__item &:focus {
+    color: var(--extra-color-orange);
   }
-
   &--current {
     color: var(--extra-color-orange);
   }
 }
-
 .page-header__button {
   
   margin-left: 60px;
   padding: 25px 22px 24px 21px;
-
   min-width: 336px;
   height: 70px;
-
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.21;
-
-    text-decoration: none;
-    text-transform: uppercase;
-
+  color: var(--extra-color-orange);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
   border: 2px solid var(--extra-color-orange);
   background-color: transparent;
-
   @include mq(mobile-only) {
     display: none;
   }
   @include mq(tablet-only) {
     margin-left: 244px;
     padding: 3px 13px 3px 14px;
-
-    &--current {
-      color: var(--extra-color-orange);
-    }
+    min-width: 260px;
+    height: 48px;
   }
 }
