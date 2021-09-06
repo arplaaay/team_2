@@ -47,15 +47,30 @@ line-height: 1.65;
 letter-spacing: 0.08em;
    } 
 }
-.advantages__subtitle::before { 
+.advantages__subtitle:nth-child(1)::before { 
   content: "";
   display: inline-block;
   width: 100px;
   height: 102px;
   margin-right: -2px;
   fill: var(--extra-color-orange);
-  background-image: url("../images/icons/icons-sprite.svg#icon-female-student");
-
-
+  background-image: url("./images/icons/icons-advantag.svg#icon-Group1");
 }
-
+.advantages__subtitle:nth-child(2)::before { 
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 102px;
+  margin-right: -2px;
+  fill: var(--extra-color-orange);
+  background-image: url("./images/icons/icons-advantag.svg#icon-Group2");
+}
+.advantages__subtitle:nth-child(3)::before { 
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 102px;
+  margin-right: -2px;
+  fill: var(--extra-color-orange);
+  background-image: url("./images/icons/icons-advantag.svg#icon-Group2");
+}
