@@ -50,7 +50,7 @@
 .contacts-description {
   margin-top: 24px;
   margin-bottom: 23px;
-  // font-family: Montserrat, sans-serif;
+
   color: var(--text-color-white);
   font-weight: 600;
   font-size: 12px;
@@ -60,7 +60,7 @@
   @include mq(tablet) {
     font-size: 14px;
     line-height: 1.21;
-    // max-width: 452px;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -79,7 +79,7 @@
   }
 }
 .contacts-form {
-  // margin-top: 43px ;
+
   text-align: center;
   margin: 0 auto;
   @include mq(tablet-only) {
@@ -99,8 +99,7 @@
   border: 1px solid #ffffff;
   outline: none;
   color: var(--section-white);
-  // font-family: Montserrat;
-  // font-style: normal;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
