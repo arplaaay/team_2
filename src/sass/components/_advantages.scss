@@ -1,0 +1,61 @@
+.section.advantages { 
+    padding-top: 96.5px;
+    padding-bottom: 130px;
+  
+    @include mq(tablet-only) { 
+        display: none;
+    }
+
+    @include mq(mobile-only) { 
+       padding-top: 77px; 
+       padding-bottom: 44.50px; }
+}
+
+
+.advantages__title--visually-hidden { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.advantages__list { 
+
+    @include mq(desktop) { 
+        display: flex;
+     }
+}
+
+.advantages__item { 
+    @include mq(desktop) { 
+    flex-basis: calc((100%) / 3);
+    }
+}
+
+.advantages__subtitle { 
+   @include mq(desktop) {
+    
+
+color: var(--title-color);
+font-weight: bold;
+font-size: 20px;
+line-height: 1.65;
+letter-spacing: 0.08em;
+   } 
+}
+.advantages__subtitle::before { 
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 102px;
+  margin-right: -2px;
+  fill: var(--extra-color-orange);
+  background-image: url("../images/icons/icons-sprite.svg#icon-female-student");
+
+
+}
+
