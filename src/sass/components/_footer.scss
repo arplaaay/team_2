@@ -1,4 +1,10 @@
 .footer {
+  &__logo {
+    @include mq(mobile-only) {
+      display: flex;
+      justify-content: center;
+    }
+  }
   &__address {
     @include mq(mobile-only) {
       margin-top: 20.86px;
@@ -13,6 +19,9 @@
     }
 
     &-item:not(:last-child) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @include mq(mobile-only) {
         margin-bottom: 30px;
       }
@@ -38,6 +47,13 @@
       font-size: 14px;
       line-height: 1.22;
       letter-spacing: 0.08em;
+
+      @include mq(tablet) {
+        font-size: 20px;
+      }
+      @include mq(desktop) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -59,34 +75,12 @@
     }
   }
   &__logo {
-    // width: 80px;
-    // height: 29.14px;
-    // display: block;
-    // text-align: center;
-    color: var(--title-color);
     @include mq(desktop) {
       margin-right: 290px;
     }
 
-    &-svg {
-      margin-right: 3.76px;
-      margin-left: 4.25px;
-      width: 14.21px;
-      height: 19.38px;
-      fill: var(--extra-color-orange);
-
-      @include mq(tablet) {
-        width: 22px;
-        height: 30px;
-      }
-    }
-
     &-address {
-      // position: relative;
       padding: 30px 0;
-      @include mq(mobile-only) {
-        text-align: center;
-      }
 
       @include mq(tablet) {
         display: flex;
@@ -136,56 +130,6 @@
       @include mq(tablet) {
         justify-content: flex-start;
       }
-    }
-  }
-}
-.logo__part-one {
-  //   display: block;
-  //   text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4px;
-
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.22;
-  letter-spacing: 0.04em;
-
-  @include mq(mobile-only) {
-    font-size: 18px;
-  }
-}
-.logo__part-two {
-  //   margin: 3px 0 0 0;
-
-  font-weight: bold;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--title-color);
-
-  @include mq(mobile-only) {
-    font-size: 5px;
-    line-height: 1.2;
-  }
-  &--accent {
-    // position: absolute;
-    // top: 35%;
-    // left: 118px;
-    // transform: translateY(-35%);
-    // margin-left: 118px;
-    // justify-content: flex-start;
-    font-weight: bold;
-    font-size: 8px;
-    line-height: 1.25;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--extra-color-orange);
-
-    @include mq(mobile-only) {
-      font-size: 5px;
-      line-height: 1.2;
     }
   }
 }
