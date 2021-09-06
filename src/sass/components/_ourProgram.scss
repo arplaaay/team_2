@@ -54,7 +54,7 @@
 }
 
 .program__title,
-.problems__title
+.benefits__title
 {
     color: var(--text-color-white) ;
     font-weight: 800;
@@ -86,7 +86,7 @@
 
 }
 
-.problems__title
+.benefits__title
 {
     line-height: 1.4; 
     margin-bottom: 30px;
@@ -245,7 +245,7 @@
     }
 }
 
-.problems__background
+.benefits__background
 {
     background-color: var(--section-white);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -263,7 +263,7 @@
 }
 
 
-.problems__list
+.benefits__list
 {
     counter-reset: section;
     @include mq(tablet) 
@@ -278,7 +278,7 @@
     }
 }
 
-.problems__item
+.benefits__item
 {
     @include mq(tablet) 
     {
@@ -293,7 +293,7 @@
 }
 
 
-.problems__item::before
+.benefits__item::before
 {
     counter-increment: section;
     content: "-0" counter(section);
@@ -310,7 +310,7 @@
     }
 }
 
-.problems__text
+.benefits__text
 {
     color: var(--title-color) ;
     font-weight: 700;
@@ -323,7 +323,7 @@
     } 
 }
 
-.problems__item:not(:last-child)
+.benefits__item:not(:last-child)
 {
     margin-bottom: 36px;
 }
@@ -342,7 +342,7 @@
                    
     } 
 }
-.problems{
+.benefits{
     @include mq(desktop)
     {
         position: relative;
