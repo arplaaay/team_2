@@ -1,3 +1,9 @@
+.container {
+  @include mq(mobile-only) {
+    padding: 0;
+  }
+}
+
 .guarantee__title {
   margin-bottom: 30px;
   font-weight: 800;
@@ -10,6 +16,11 @@
 
 .guarantee__wrapper {
   background-color: var(--section-grey);
+  padding: 50px 0;
+
+  @include mq(mobile-only) {
+    padding: 20px;
+  }
 }
 
 .guarantee__item {
@@ -20,17 +31,9 @@
 .guarantee__item:not(:last-child) {
   margin-bottom: 23px;
 }
-
-.guarantee__desc {
-  color: var(--extra-color-dark-grey);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-}
-
 .guarantee__icon {
   fill: var(--extra-color-orange);
-  margin-right: 20px;
+  // margin-right: 20px;
   width: 43px;
   height: 20px;
 }
@@ -43,4 +46,22 @@
   top: 50%;
   left: 7px;
   border: 1px dashed var(--text-color);
+
+  @include mq(tablet) {
+    height: 35px;
+    left: 20px;
+    top: 60%;
+  }
+}
+
+.guarantee__desc {
+  color: var(--extra-color-dark-grey);
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.guarantee__desc--accent {
+  color: var(--extra-color-orange);
 }
