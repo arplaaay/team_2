@@ -1,4 +1,18 @@
-.container {
+.container__guarantee {
+  max-width: 480px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1366px;
+    padding: 0 26px;
+  }
   @include mq(mobile-only) {
     padding: 0;
   }
