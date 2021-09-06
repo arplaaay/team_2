@@ -84,7 +84,7 @@ line-height: 1.57; }
 
 @include mq(notDesktop) {
   width: 270px ;
- .hero__text--accent-tablet { 
+ .hero__text--accent-notdesctop { 
     color:var(--extra-color-orange);} }
 }
 
