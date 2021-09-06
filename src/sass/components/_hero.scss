@@ -1,96 +1,95 @@
-.section.hero { 
-    padding-top: 45.95px;
-    padding-bottom: 10.42px;
+.section.hero {
+  padding-top: 45.95px;
+  padding-bottom: 10.42px;
 
-    @include mq(mobile-only) { 
-       padding-top: 51.86px; 
-    }
+  @include mq(mobile-only) {
+    padding-top: 51.86px;
+  }
 
-    @include mq(tablet-only) { 
+  @include mq(tablet-only) {
     padding-top: 83.44px;
-    padding-bottom: 32.50px;  
+    padding-bottom: 32.5px;
+  }
+}
+
+.section-hero-flex {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
+.hero__content {
+  margin-top: 54.05px;
+
+  @include mq(mobile-only) {
+    margin-top: 0;
+  }
+
+  @include mq(tablet-only) {
+    margin-top: 4.56px;
+  }
+}
+
+.hero__title {
+  width: 642px;
+
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.3;
+
+  @include mq(mobile-only) {
+    max-width: 280px;
+    font-size: 20px;
+  }
+
+  @include mq(tablet-only) {
+    width: 332px;
+    font-size: 26px;
+  }
+}
+
+.hero__text {
+  margin-top: 8px;
+  width: 497px;
+
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+
+  @include mq(mobile-only) {
+    max-width: 280px;
+    margin-bottom: 52px;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+
+  @include mq(tablet-only) {
+    width: 332px;
+    margin-bottom: 317px;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.hero__text--accent {
+  display: inline-block;
+
+  color: var(--title-color);
+
+  font-weight: bold;
+
+  @include mq(notDesktop) {
+    width: 270px;
+    .hero__text--accent-notdesctop {
+      color: var(--extra-color-orange);
     }
+  }
 }
 
-.section-hero-flex { 
-   @include mq(tablet) { 
-    display: flex;}
-}
-
-
-.hero__content { 
-    margin-top: 54.05px; 
-     
-@include mq(mobile-only) {
-   margin-top: 0; 
-}
-
-@include mq(tablet-only) { 
-    margin-top: 4.56px; }
-    
-}
-
-.hero__title { 
- width: 642px;   
-    
-font-weight: 800;
-font-size: 58px;
-line-height: 1.3;
-
-@include mq(mobile-only) {
-max-width: 280px; 
-font-size: 20px;   
-}
-
-@include mq(tablet-only) {
-width: 332px;   
-font-size: 26px; }
-
-}
-
-.hero__text  {
-margin-top: 8px;
-width: 497px;
-
-color: var(--text-color);
-
-font-weight: 500;
-font-size: 20px;
-line-height: 1.65;
-letter-spacing: 0.08em;
-
-@include mq(mobile-only) {
-max-width: 280px; 
-margin-bottom: 52px;
-font-size: 14px; 
-line-height: 1.57; 
-}
-
-
-@include mq(tablet-only) {
-width: 332px; 
-margin-bottom: 317px;   
-font-size: 14px;
-line-height: 1.57; }
-
-}
-
-.hero__text--accent { 
- display: inline-block;   
- 
- color: var(--title-color);
-
- font-weight: bold; 
-
-@include mq(notDesktop) {
-  width: 270px ;
- .hero__text--accent-notdesctop { 
-    color: var(--extra-color-orange);} }
-}
-
-
-.hero__button { 
-    
+.hero__button {
   margin-top: 52px;
   padding: 27px 70px 26px;
   min-width: 354px;
@@ -105,50 +104,58 @@ line-height: 1.57; }
   line-height: 1.21;
   text-transform: uppercase;
 
-  @include mq(notDesktop) { 
-  padding: 14px 1px;
-  min-width: 260px;
-  height: 48px; }
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.2);
+  }
+
+  @include mq(notDesktop) {
+    padding: 14px 1px;
+    min-width: 260px;
+    height: 48px;
+  }
 
   @include mq(mobile-only) {
-      margin-left: 10%;
-      margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   @include mq(tablet-only) {
-  margin-left: 116px; }
-   
+    margin-left: 116px;
+  }
 }
 
-.hero__picture { 
-display: block;
+.hero__picture {
+  display: block;
 
-@include mq(mobile-only) {
-max-width: 208px; 
-margin-top: 55px;
-margin-left: auto;
-margin-right: auto;}
-
+  @include mq(mobile-only) {
+    max-width: 208px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.hero__decoration { 
-    position: absolute;
+.hero__decoration {
+  position: absolute;
 
-    left: -0.5px;
-    top: -3.5px;
-    z-index: -1;
+  left: -0.5px;
+  top: -3.5px;
+  z-index: -1;
 
-background: #FFFFFF;
+  background: #ffffff;
 
-box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
-@include mq(mobile-only) { 
+  @include mq(mobile-only) {
     left: -64px;
-    top: -0.5px; }
+    top: -0.5px;
+  }
 
- @include mq(tablet-only) {
-    
- left: 0px;
- top: 1px; }
-
+  @include mq(tablet-only) {
+    left: 0px;
+    top: 1px;
+  }
 }
