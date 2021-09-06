@@ -2,14 +2,18 @@
   background-color: var(--section-black);
 }
 
+.problems__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+  &--accent {
+    color: var(--extra-color-orange);
+  }
+}
+
 .problems__wrapper {
   background-color: var(--section-white);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-}
-
-.problems-title {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 130%;
-  letter-spacing: 0.03em;
 }
