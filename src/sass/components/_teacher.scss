@@ -149,3 +149,17 @@
     font-size: 18px;
   }
 }
+
+.teacher__link {
+  position: absolute;
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.teacher__link:focus,
+.teacher__link:hover {
+  transform: scale(1.1);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
