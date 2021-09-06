@@ -1,53 +1,65 @@
 .slick-slider {
-position: relative;
-
+  position: relative;
 }
 .slick-list {
-    overflow: hidden;
-    // max-width: 1090px;
+  overflow: hidden;
 }
 .slick-track {
-    display: flex;
-    transform: none;
+  display: flex;
+  transform: none;
 }
-
-.slick-arrow{
-    position: absolute;
-    margin-top: -20px ;
-    top: 50%;
-    z-index: 10;
+.review-slider__pagination .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  & > img {
+    width: 54px;
+    height: 54px;
+  }
 }
-.slick-prev{
-left: 0;
-// top: 0;
+.slick-arrow {
+  position: absolute;
+  margin-top: -20px;
+  top: 50%;
+  z-index: 10;
 }
-.slick-next{
-right: 0;
+.arrow-slider-prev {
+  left: -13px;
+  @include mq(desktop) {
+    left: -83px;
+  }
 }
-.arrow-pagination-prev{
-left: -49px;
+.arrow-slider-next {
+  right: -13px;
+  @include mq(desktop) {
+    right: -83px;
+  }
+}
+.arrow-pagination-prev {
+  top: 40px;
+  left: -49px;
 }
 .arrow-pagination-next {
-right: -49px;
+  top: 40px;
+  right: -49px;
 }
-.review-btn{
-    font-size: 0;
-    background-color: inherit;
-    border: 0;
+.review-btn {
+  font-size: 0;
+  background-color: inherit;
+  border: 0;
 }
-.icon-arrow{
-    width: 25px;
-    height: 20px;
-    
+.icon-arrow {
+  width: 25px;
+  height: 20px;
 }
-.slick-slide > img {
-    margin: 0 auto;
-}
-.slick-current > img{
-border-radius: 50%;
-border: 2px solid red;
-// margin: 0 auto;
+
+.slick-current > img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px rgba(255, 107, 9, 1);
+
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-wrapper.slick-current {
-    box-shadow: 5px 8px 26px rgba(0, 0, 0, 0.04);
+  box-shadow: 5px 8px 26px rgba(0, 0, 0, 0.04);
 }
