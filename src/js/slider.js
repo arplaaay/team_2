@@ -21,6 +21,7 @@ $(document).on('ready', function () {
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 1500,
+    waitForAnimate: false,
     responsive: [
       {
         breakpoint: 766,
