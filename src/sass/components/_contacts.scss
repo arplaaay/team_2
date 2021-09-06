@@ -5,22 +5,22 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-image: url(../../src/images/modalMobile@1x.png);
+  background-image: url(../../src/images/modal-sm@1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../../src/images/modalMobile@2x.png);
+    background-image: url(../../src/images/modal-sm@2x.png);
   }
   @include mq(tablet) {
     max-width: 768px;
-    background-image: url(../../src/images/modalTablet@1x.png);
+    background-image: url(../../src/images/modal-md@1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../src/images/modalTablet@2x.png);
+      background-image: url(../../src/images/modal-md@2x.png);
     }
   }
   @include mq(desktop) {
     max-width: 1680px;
-    background-image: url(../../src/images/modalDesctop@1x.png);
+    background-image: url(../../src/images/modal-lg@1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../src/images/modalDesctop@2x.png);
+      background-image: url(../../src/images/modal-lg@2x.png);
     }
   }
 }
