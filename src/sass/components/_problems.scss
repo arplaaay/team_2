@@ -10,12 +10,11 @@
   }
 
   @include mq(desktop) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--section-black) 80%,
-      var(--section-white) 20%
-    );
-    background: url(../../icons/icons-sprite.svg);
+    background-image: url(../icons/campfire.svg),
+      linear-gradient(to bottom, var(--section-black) 80%, var(--section-white) 20%);
+    background-attachment: unset;
+    background-position: bottom 63% right;
+    background-repeat: no-repeat;
   }
 
   @include mq(tablet) {
@@ -52,6 +51,7 @@
 .problems__wrapper {
   background-color: var(--section-white);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  width: 1314px;
 }
 
 .problems__list {
