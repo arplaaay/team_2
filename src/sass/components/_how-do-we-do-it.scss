@@ -13,6 +13,7 @@
     font-size: 26px;
   }
   @include mq(desktop) {
+    text-align: left;
     margin-bottom: 50px;
     font-size: 46px;
   }
