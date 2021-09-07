@@ -19,8 +19,8 @@ $(document).on('ready', function () {
     arrows: false,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 1500,
+    autoplaySpeed: 3000,
+    speed: 1000,
     waitForAnimate: false,
     responsive: [
       {

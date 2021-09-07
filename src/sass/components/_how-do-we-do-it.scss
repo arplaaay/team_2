@@ -1,0 +1,123 @@
+.section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--title-color);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include mq(tablet) {
+    font-size: 26px;
+  }
+  @include mq(desktop) {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.how-do-we-do-it {
+  background: var(--section-white);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-left: -20px;
+  margin-top: -15px;
+
+  cursor: pointer;
+
+  @include mq(tablet) {
+    margin-top: -30px;
+  }
+  &__title {
+    height: 39px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    @include mq(tablet) {
+      height: 37px;
+    }
+
+    @include mq(desktop) {
+      height: 53px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  &__text {
+    height: 95px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    @include mq(desktop) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+
+    &::before {
+      content: '—';
+      display: block;
+      margin: 0 auto;
+      height: 32px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 1.65;
+      text-align: center;
+      letter-spacing: 0.08em;
+      color: var(--extra-color-orange);
+    }
+  }
+
+  &__item {
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 30px 13px 24px;
+
+    transition: var(--transition);
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+    @include mq(tablet) {
+      flex-basis: calc(100% / 2 - 20px);
+      margin-top: 30px;
+      padding: 40px 30px 30px;
+      height: 334px;
+    }
+    @include mq(desktop) {
+      flex-basis: calc(100% / 3 - 20px);
+      padding: 40px 30px 55px;
+      height: 396px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--extra-color-orange);
+      box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    }
+    &:hover .how-do-we-do-it__icon,
+    &:hover .how-do-we-do-it__text,
+    &:hover .how-do-we-do-it__text::before,
+    &:hover .how-do-we-do-it__title {
+      fill: var(--text-color-white);
+      color: var(--text-color-white);
+    }
+  }
+  &__icon {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    fill: var(--extra-color-orange);
+  }
+}

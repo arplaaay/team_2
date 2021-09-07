@@ -4,8 +4,8 @@
   @include mq(tablet) {
     background-image: linear-gradient(
       to bottom,
-      var(--section-black) 65%,
-      var(--section-white) 35%
+      var(--section-black) 75%,
+      var(--section-white) 25%
     );
   }
 
@@ -51,7 +51,6 @@
 .problems__wrapper {
   background-color: var(--section-white);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  width: 1314px;
 }
 
 .problems__list {
