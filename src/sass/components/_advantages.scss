@@ -36,6 +36,7 @@
 
 .advantages__item { 
     position: relative;
+    z-index: 1;
     
     @include mq(desktop) { 
     flex-basis: calc((100%) / 3);
@@ -55,11 +56,10 @@
 
     }
 
-   outline: 2px dashed rgb(120, 47, 255);
-
 }
 
 .advantages__subtitle { 
+  background-color: var(--section-white);
    
    color: var(--title-color);
    font-weight: bold;
@@ -75,14 +75,16 @@
 
 .advantages__item:nth-child(1)::before { 
   position: absolute;
+  z-index: -1;
 
   width: 58.82px;
   height: 60px;
+  border: 2px solid var(--extra-color-orange);
 
   content: "";
   display: inline-block;
 
-  fill: var(--extra-color-orange);
+  
 
 
    @include mq(mobile) { 
@@ -95,15 +97,17 @@
      width: 100px;
      height: 102px; }
   
-  background-image: url("../icons/icons-advantag.svg#icon-Group1");
-  outline: 2px dashed rgb(255, 47, 92);
+  background-image: url("../images/icons/icons-sprite.svg#icon-female-student");
+  
 }
 
 .advantages__item:nth-child(2)::before { 
   position: absolute;
+  z-index: -1;
 
   width: 58.82px;
   height: 60px;
+  border: 2px solid var(--extra-color-orange);
 
   content: "";
   display: inline-block;
@@ -122,14 +126,17 @@
      height: 102px; }
   
   
-  background-image: url("../icons/icons-advantag.svg#icon-Group2");
-  outline: 2px dashed rgb(255, 47, 92);
+  background-image: url("../images/icons/icons-sprite.svg#icon-mobile-learning");
+  
   
 }
 .advantages__item:nth-child(3)::before { 
   position: absolute;
+  z-index: -1;
+
   width: 58.82px;
   height: 60px;
+  border: 2px solid var(--extra-color-orange);
 
   content: "";
   display: inline-block;
@@ -147,6 +154,6 @@
      width: 100px;
      height: 102px; }
   
-  background-image: url("../icons/icons-advantag.svg#icon-Group2");
-  outline: 2px dashed rgb(255, 47, 92);
+  background-image: url("../images/icons/icons-sprite.svg#icon-insurance");
+  
 }
