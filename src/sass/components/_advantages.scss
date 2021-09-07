@@ -1,0 +1,176 @@
+.section.advantages { 
+    padding-top: 114.5px;
+    padding-bottom: 130px;
+  
+    @include mq(tablet-only) { 
+        display: none;
+    }
+
+    @include mq(mobile-only) { 
+       padding-top: 77px; 
+       padding-bottom: 44.50px; }
+}
+
+
+.advantages__title--visually-hidden { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.advantages__list { 
+  display: flex;
+
+    @include mq(mobile-only) {   
+        flex-direction: column;
+        justify-content: center;
+        
+     }
+
+}
+
+.advantages__item { 
+    position: relative;
+    z-index: 1;
+    
+    @include mq(desktop) { 
+    flex-basis: calc((100%) / 3);
+    padding-left: 100px;
+    }
+    
+    @include mq(mobile-only) { 
+      max-width: 216px;
+      padding-left: 70px ;
+      margin-left: auto;
+      margin-right: auto;
+
+      &::after {  
+     position: absolute;
+     z-index: 1;
+     left: 56px;
+     top: 7px;
+
+     
+     content: "";
+     display: block;
+     width: 4px;
+     height: 46px;
+     background-color: var(--section-white) ;
+    }
+
+      &:nth-child(2) { 
+      margin-top: 21px ;
+      margin-bottom: 21px;
+      }
+
+    }
+
+}
+
+.advantages__subtitle { 
+  
+  background-color: var(--section-white);
+   
+   color: var(--title-color);
+   font-weight: bold;
+   line-height: 1.65;
+   letter-spacing: 0.08em;
+
+   @include mq(mobile) { 
+    font-size: 14px;
+    
+
+   }
+   @include mq(desktop) {
+    font-size: 20px; } 
+}
+
+.advantages__item:nth-child(1)::before { 
+  position: absolute;
+  z-index: -1;
+
+  width: 58.82px;
+  height: 60px;
+  border: 2px solid var(--extra-color-orange);
+
+  content: "";
+  display: inline-block;
+
+  
+
+
+   @include mq(mobile) { 
+     left: 0;
+     top: -7px;}
+
+   @include mq(desktop) { 
+     left: 18px;
+     top: -18px;
+     width: 100px;
+     height: 102px; }
+  
+  background-image: url("../images/icons/icons-sprite.svg#icon-female-student");
+  
+}
+
+.advantages__item:nth-child(2)::before { 
+  position: absolute;
+  z-index: -1;
+
+  width: 58.82px;
+  height: 60px;
+  border: 2px solid var(--extra-color-orange);
+
+  content: "";
+  display: inline-block;
+
+  fill: var(--extra-color-orange);
+
+
+   @include mq(mobile) { 
+     left: 0;
+     top: 0; }
+
+   @include mq(desktop) { 
+     left: 18px;
+     top: -18px;
+     width: 100px;
+     height: 102px; }
+  
+  
+  background-image: url("../images/icons/icons-sprite.svg#icon-mobile-learning");
+  
+  
+}
+.advantages__item:nth-child(3)::before { 
+  position: absolute;
+  z-index: -1;
+
+  width: 58.82px;
+  height: 60px;
+  border: 2px solid var(--extra-color-orange);
+
+  content: "";
+  display: inline-block;
+
+  fill: var(--extra-color-orange);
+
+
+   @include mq(mobile) { 
+     left: 0;
+     top: 0; }
+
+   @include mq(desktop) { 
+     left: 18px;
+     top: -18px;
+     width: 100px;
+     height: 102px; }
+  
+  background-image: url("../images/icons/icons-sprite.svg#icon-insurance");
+  
+}
