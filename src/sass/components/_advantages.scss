@@ -54,7 +54,9 @@ letter-spacing: 0.08em;
   height: 102px;
   margin-right: -2px;
   fill: var(--extra-color-orange);
+  /*
   background-image: url("../images/icons/icons-advantag.svg#icon-Group1");
+  */
 }
 .advantages__subtitle:nth-child(2)::before { 
   content: "";
@@ -63,7 +65,9 @@ letter-spacing: 0.08em;
   height: 102px;
   margin-right: -2px;
   fill: var(--extra-color-orange);
+  /*
   background-image: url("../images/icons/icons-advantag.svg#icon-Group2");
+  */
 }
 .advantages__subtitle:nth-child(3)::before { 
   content: "";
@@ -72,5 +76,7 @@ letter-spacing: 0.08em;
   height: 102px;
   margin-right: -2px;
   fill: var(--extra-color-orange);
+  /*
   background-image: url("../images/icons/icons-advantag.svg#icon-Group2");
+  */
 }
