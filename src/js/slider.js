@@ -43,7 +43,7 @@ $(document).on('ready', function () {
   </button>`,
     prevArrow: `<button class="review-btn arrow-pagination-prev slick-prev" type="button">
     <svg class="icon-arrow">
-      <use href="./icons-sprite.49cd6c2.svg#icon-arrow-left">
+      <use href="./icons-sprite.49cd6c2a.svg#icon-arrow-left">
   </use>
     </svg>
   </button>`,
