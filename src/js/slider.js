@@ -37,13 +37,13 @@ $(document).on('ready', function () {
   $('.review-slider__pagination').slick({
     nextArrow: `<button class="review-btn arrow-pagination-next slick-next" type="button">
     <svg class="icon-arrow">
-      <use href="/icons-sprite.e07a9deb.svg#icon-arrow-right">
+      <use href="./icons-sprite.49cd6c2a.svg#icon-arrow-right">
   </use>
     </svg>
   </button>`,
     prevArrow: `<button class="review-btn arrow-pagination-prev slick-prev" type="button">
     <svg class="icon-arrow">
-      <use href="/icons-sprite.e07a9deb.svg#icon-arrow-left">
+      <use href="./icons-sprite.49cd6c2.svg#icon-arrow-left">
   </use>
     </svg>
   </button>`,
