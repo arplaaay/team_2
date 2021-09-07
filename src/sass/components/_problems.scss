@@ -10,7 +10,7 @@
   }
 
   @include mq(desktop) {
-    background-image: url(../icons/campfire.svg),
+    background-image: url(../images/icons/campfire.svg),
       linear-gradient(to bottom, var(--section-black) 80%, var(--section-white) 20%);
     background-attachment: unset;
     background-position: bottom 63% right;
