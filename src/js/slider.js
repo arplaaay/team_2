@@ -2,13 +2,13 @@ $(document).on('ready', function () {
   $('.review-slider').slick({
     nextArrow: `<button class="review-btn arrow-slider-next slick-next" type="button">
     <svg class="icon-arrow">
-      <use href="/icons-sprite.49cd6c2a.svg#icon-arrow-right">
+      <use href="./icons-sprite.49cd6c2a.svg#icon-arrow-right">
      </use>
     </svg>
      </button>`,
     prevArrow: `<button class="review-btn arrow-slider-prev slick-prev" type="button">
     <svg class="icon-arrow">
-      <use href="/icons-sprite.49cd6c2a.svg#icon-arrow-left">
+      <use href="./icons-sprite.49cd6c2a.svg#icon-arrow-left">
      </use>
     </svg>
     </button>`,
