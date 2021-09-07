@@ -49,6 +49,20 @@
       margin-left: auto;
       margin-right: auto;
 
+      &::after {  
+     position: absolute;
+     z-index: 1;
+     left: 57px;
+     top: 7px;
+
+     
+     content: "";
+     display: block;
+     width: 3px;
+     height: 46px;
+     background-color: var(--section-white) ;
+    }
+
       &:nth-child(2) { 
       margin-top: 21px ;
       margin-bottom: 21px;
@@ -59,6 +73,7 @@
 }
 
 .advantages__subtitle { 
+  
   background-color: var(--section-white);
    
    color: var(--title-color);
@@ -68,6 +83,8 @@
 
    @include mq(mobile) { 
     font-size: 14px;
+    
+
    }
    @include mq(desktop) {
     font-size: 20px; } 
