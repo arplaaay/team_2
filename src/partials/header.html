@@ -1,59 +1,44 @@
 <header class="page-header">
   <div class="container header">
     <div class="page-header-flex">
-      <!-- однотипные элементы можно вынести в отдельный файл
-        и подключать в нужных места, например здесь,
-        а потом еще и в modal и footer -->
       <div class="page-header__wrapper">
         <a href="./index.html" class="logo">
-          <svg class="logo__svg" width="80" height="20">
-            <use href="./images/icons/icons-sprite.svg#icon-logo"></use>
+          <svg width="80" height="30" class="modal__header-svg">
+            <use href="./images/icons/icons-sprite.svg#logo"></use>
           </svg>
-          <p class="logo__slogan"><span class="logo__slogan--acent">hellish</span> english</p>
         </a>
+
+        <nav class="page-header__navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a href="#our-program" class="site-navigation__link site-navigation__link--noncurrent"
+                >Studying program</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a href="#about" class="site-navigation__link site-navigation__link--noncurrent"
+                >about</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a
+                href="#training-options"
+                class="site-navigation__link site-navigation__link--noncurrent"
+                >training options</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a href="#contacts" class="site-navigation__link site-navigation__link--noncurrent"
+                >contacts</a
+              >
+            </li>
+          </ul>
+
+          <button type="button" class="button page-header__button">consultation by phone</button>
+        </nav>
 
         <button
           class="page-header__hamburger hamburger hamburger--collapse js-open-menu"
-          type="button"
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
-
-      <nav class="page-header__navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation__item">
-            <a href="#our-program" class="site-navigation__link site-navigation__link--noncurrent"
-              >Studying program</a
-            >
-          </li>
-          <li class="site-navigation__item">
-            <a href="#about" class="site-navigation__link site-navigation__link--noncurrent"
-              >about</a
-            >
-          </li>
-          <li class="site-navigation__item">
-            <a
-              href="#training-options"
-              class="site-navigation__link site-navigation__link--noncurrent"
-              >training options</a
-            >
-          </li>
-          <li class="site-navigation__item">
-            <a href="#contacts" class="site-navigation__link site-navigation__link--noncurrent"
-              >contacts</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <div class="page-header__btn-wrapper">
-        <button type="button" class="button page-header__button">consultation by phone</button>
-
-        <button
-          class="page-header__hamburger-btn hamburger hamburger--collapse js-open-menu"
           type="button"
         >
           <span class="hamburger-box">
