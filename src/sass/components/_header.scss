@@ -2,10 +2,43 @@
   padding-top: 33.5px;
 
   @include mq(mobile-only) {
-    padding-top: 30.5px;
+    padding-top: 30px;
   }
   @include mq(tablet-only) {
     padding-top: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @include mq(mobile-only) {
+      justify-content: space-between;
+    }
+  }
+
+  &__hamburger {
+    @include mq(desktop) {
+      display: none;
+    }
+
+    @include mq(tablet-only) {
+      display: none;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    margin-left: auto;
+
+    & > .page-header__hamburger-btn {
+      @include mq(mobile-only) {
+        display: none;
+      }
+
+      @include mq(desktop) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -59,9 +92,6 @@
   .site-navigation__item &:focus {
     color: var(--extra-color-orange);
   }
-  &--current {
-    color: var(--extra-color-orange);
-  }
 }
 .page-header__button {
   margin-left: 60px;
@@ -79,7 +109,7 @@
     display: none;
   }
   @include mq(tablet-only) {
-    margin-left: 239px;
+    margin-right: 40px;
     padding: 3px 13px 3px 14px;
     min-width: 260px;
     height: 48px;
