@@ -1,178 +1,90 @@
-.section.advantages {
-  padding-top: 115px;
-  padding-bottom: 130px;
+.advantages {
+  padding: 6px 0 50px;
+  margin: 0 auto;
 
-  @include mq(tablet-only) {
-    display: none;
+  &__title--visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
   }
 
-  @include mq(mobile-only) {
-    padding-top: 77px;
-    padding-bottom: 45px;
-  }
-}
-
-.advantages__title--visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.advantages__list {
-  display: flex;
-
-  @include mq(mobile-only) {
-    display: block;
-    margin-left: 32px;
-  }
-}
-
-.advantages__item {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  @include mq(desktop) {
-    flex-basis: calc((100%) / 3);
-    padding-left: 50px;
-  }
-
-  @include mq(mobile-only) {
-    // width: 216px;
-    // justify-content: flex-start;
-    // margin-left: auto;
-    margin-top: 30px;
-
-    &::after {
-      position: absolute;
-      z-index: 1;
-      left: 56px;
-      top: 7px;
-
-      content: '';
-      display: block;
-      width: 4px;
-      height: 46px;
-      background-color: var(--section-white);
-    }
-
-    &:nth-child(2) {
-      margin-top: 21px;
-      margin-bottom: 21px;
+  &__list {
+    @include mq(tablet) {
+      display: flex;
     }
   }
-}
 
-.advantages__icon {
-  margin-right: 15px;
+  &__item {
+    display: flex;
+    align-items: center;
 
-  fill: var(--extra-color-orange);
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
 
-  @include mq(mobile-only) {
-    margin-left: 12px;
+    @include mq(tablet) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
   }
-}
 
-.advantages__subtitle {
-  background-color: var(--section-white);
-
-  color: var(--title-color);
-  font-weight: bold;
-  line-height: 1.65;
-  letter-spacing: 0.08em;
-
-  @include mq(mobile) {
-    font-size: 14px;
-    line-height: 1.64;
-  }
-  @include mq(desktop) {
-    font-size: 20px;
-  }
-}
-
-.advantages__item:nth-child(1)::before {
-  position: absolute;
-  z-index: -1;
-
-  width: 58.82px;
-  height: 60px;
-  border: 2px solid var(--extra-color-orange);
-
-  content: '';
-  display: inline-block;
-
-  @include mq(mobile) {
-    // left: 0;
-    // top: -7px;
+  &__wrapper {
+    border: 2px solid var(--extra-color-orange);
     padding: 10px 12px;
+    position: relative;
+    z-index: -2;
+
+    @media screen and (max-width: 1366px) {
+      margin-right: 15px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding: 28px 35px 28px 25px;
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      background-color: var(--section-white);
+      height: 46px;
+      width: 4px;
+
+      position: absolute;
+      right: -3px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1;
+
+      @media screen and (min-width: 1366px) {
+        height: 66px;
+      }
+    }
   }
 
-  @include mq(desktop) {
-    left: 18px;
-    top: -18px;
-    width: 100px;
-    height: 102px;
-  }
-}
+  &__icon {
+    fill: var(--extra-color-orange);
 
-.advantages__item:nth-child(2)::before {
-  position: absolute;
-  z-index: -1;
-
-  width: 58.82px;
-  height: 60px;
-  border: 2px solid var(--extra-color-orange);
-
-  content: '';
-  display: inline-block;
-
-  fill: var(--extra-color-orange);
-
-  @include mq(mobile) {
-    left: 0;
-    top: 0;
+    @include mq(desktop) {
+    }
   }
 
-  @include mq(desktop) {
-    left: 18px;
-    top: -18px;
-    width: 100px;
-    height: 102px;
-  }
-}
-.advantages__item:nth-child(3)::before {
-  position: absolute;
-  z-index: -1;
+  &__subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+    color: var(--title-color);
 
-  width: 58.82px;
-  height: 60px;
-  border: 2px solid var(--extra-color-orange);
-
-  content: '';
-  display: inline-block;
-
-  fill: var(--extra-color-orange);
-
-  @include mq(mobile) {
-    left: 0;
-    top: 0;
-  }
-
-  @include mq(desktop) {
-    left: 18px;
-    top: -18px;
-    width: 100px;
-    height: 102px;
+    @include mq(desktop) {
+      font-size: 20px;
+      margin-left: -17px;
+    }
   }
 }
