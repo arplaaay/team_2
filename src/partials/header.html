@@ -4,30 +4,58 @@
       <!-- однотипные элементы можно вынести в отдельный файл
         и подключать в нужных места, например здесь,
         а потом еще и в modal и footer -->
+      <div class="page-header__wrapper">
+        <include src="./partials/logo.html"></include>
 
-      <include src="./partials/logo.html"></include>
+        <button
+          class="page-header__hamburger hamburger hamburger--collapse js-open-menu"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
 
       <nav class="page-header__navigation">
         <ul class="site-navigation">
           <li class="site-navigation__item">
-            <a href="" class="site-navigation__link site-navigation__link--noncurrent"
+            <a href="#our-program" class="site-navigation__link site-navigation__link--noncurrent"
               >Studying program</a
             >
           </li>
           <li class="site-navigation__item">
-            <a href="" class="site-navigation__link site-navigation__link--current">about</a>
+            <a href="#about" class="site-navigation__link site-navigation__link--noncurrent"
+              >about</a
+            >
           </li>
           <li class="site-navigation__item">
-            <a href="" class="site-navigation__link site-navigation__link--noncurrent"
+            <a
+              href="#training-options"
+              class="site-navigation__link site-navigation__link--noncurrent"
               >training options</a
             >
           </li>
           <li class="site-navigation__item">
-            <a href="" class="site-navigation__link site-navigation__link--noncurrent">contacts</a>
+            <a href="#contacts" class="site-navigation__link site-navigation__link--noncurrent"
+              >contacts</a
+            >
           </li>
         </ul>
       </nav>
-      <button type="button" class="button page-header__button">consultation by phone</button>
+
+      <div class="page-header__btn-wrapper">
+        <button type="button" class="button page-header__button">consultation by phone</button>
+
+        <button
+          class="page-header__hamburger-btn hamburger hamburger--collapse js-open-menu"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </header>

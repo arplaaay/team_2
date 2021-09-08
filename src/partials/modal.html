@@ -1,19 +1,22 @@
-<div class="modal container">
+<div class="modal container js-menu-container">
   <ul class="modal__header-list">
     <li class="modal__header-item">
       <!-- однотипные элементы можно вынести в отдельный файл
         и подключать в нужных места, например здесь,
         а потом еще и в modal и footer -->
 
-      <include src="./partials/logo.html"></include>
+      <!-- <include src="./partials/logo.html"></include> -->
 
+      <svg width="80" height="30">
+        <use href="./images/icons/icons-sprite.svg#logo-modal"></use>
+      </svg>
     </li>
 
     <li class="modal__header-item">
-      <button type="button" class="modal__btn-close">
-        <svg width="15" height="15">
-          <use href="./images/icons/icons-sprite.svg#icon-modal-close"></use>
-        </svg>
+      <button class="modal__hamburger hamburger hamburger--collapse js-close-menu" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
     </li>
   </ul>
@@ -32,4 +35,6 @@
       <a href="#" class="modal__link">Contacts</a>
     </li>
   </ul>
+
+  <button type="button" class="modal__btn">consultation by phone</button>
 </div>
