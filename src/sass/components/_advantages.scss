@@ -3,11 +3,11 @@
   padding-bottom: 130px;
 
   @include mq(tablet-only) {
-    display: none;
+    // display: none;
   }
 
   @include mq(mobile-only) {
-    padding-top: 77px;
+    padding-top: 30px;
     padding-bottom: 45px;
   }
 }
@@ -52,7 +52,9 @@
     // width: 216px;
     // justify-content: flex-start;
     // margin-left: auto;
-    margin-top: 30px;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
 
     &::after {
       position: absolute;
@@ -80,7 +82,9 @@
   fill: var(--extra-color-orange);
 
   @include mq(mobile-only) {
-    margin-left: 12px;
+    width: 30px;
+    height: 40px;
+    margin-left: 15px;
   }
 }
 
@@ -91,6 +95,7 @@
   font-weight: bold;
   line-height: 1.65;
   letter-spacing: 0.08em;
+  max-width: 150px;
 
   @include mq(mobile) {
     font-size: 14px;

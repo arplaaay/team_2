@@ -1,40 +1,45 @@
-<div class="modal container js-menu-container">
-  <ul class="modal__header-list">
-    <li class="modal__header-item">
-      <!-- однотипные элементы можно вынести в отдельный файл
+<div class="modal js-menu-container">
+  <div class="container">
+    <ul class="modal__header-list">
+      <li class="modal__header-item">
+        <!-- однотипные элементы можно вынести в отдельный файл
         и подключать в нужных места, например здесь,
         а потом еще и в modal и footer -->
 
-      <!-- <include src="./partials/logo.html"></include> -->
+        <!-- <include src="./partials/logo.html"></include> -->
 
-      <svg width="80" height="30">
-        <use href="./images/icons/icons-sprite.svg#logo-modal"></use>
-      </svg>
-    </li>
+        <svg width="80" height="30" class="modal__header-svg">
+          <use href="./images/icons/icons-sprite.svg#logo-modal"></use>
+        </svg>
+      </li>
 
-    <li class="modal__header-item">
-      <button class="modal__hamburger hamburger hamburger--collapse js-close-menu" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </li>
-  </ul>
+      <li class="modal__header-item">
+        <button
+          class="modal__hamburger hamburger hamburger--collapse js-close-menu is-active"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </li>
+    </ul>
 
-  <ul class="modal__pages-list">
-    <li class="modal__pages-item">
-      <a href="#" class="modal__link">Studying program</a>
-    </li>
-    <li class="modal__pages-item">
-      <a href="#" class="modal__link">About</a>
-    </li>
-    <li class="modal__pages-item">
-      <a href="#" class="modal__link">Training options</a>
-    </li>
-    <li class="modal__pages-item">
-      <a href="#" class="modal__link">Contacts</a>
-    </li>
-  </ul>
+    <ul class="modal__pages-list">
+      <li class="modal__pages-item">
+        <a href="#" class="modal__link">Studying program</a>
+      </li>
+      <li class="modal__pages-item">
+        <a href="#" class="modal__link">About</a>
+      </li>
+      <li class="modal__pages-item">
+        <a href="#" class="modal__link">Training options</a>
+      </li>
+      <li class="modal__pages-item">
+        <a href="#" class="modal__link">Contacts</a>
+      </li>
+    </ul>
 
-  <button type="button" class="modal__btn">consultation by phone</button>
+    <button type="button" class="modal__btn">consultation by phone</button>
+  </div>
 </div>
