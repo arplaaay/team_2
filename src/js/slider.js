@@ -2,7 +2,7 @@ $(document).on('ready', function () {
   $('.review-slider').slick({
     nextArrow: `<button class="review-btn arrow-slider-next slick-next" type="button">
     <svg class="icon-arrow">
-      <use href="./icons/icons-sprite.cf93a095.svg#icon-arrow-right">
+      <use href="./icons-sprite.cf93a095.svg#icon-arrow-right">
      </use>
     </svg>
      </button>`,
